@@ -1,0 +1,7 @@
+.image-bg{
+    height: 100vw;
+}
+
+.image-bg img{
+    object-fit:scale-down;
+}
