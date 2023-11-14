@@ -3,6 +3,7 @@ import "./styles.css";
 import { Drawer } from "@mui/material";
 import TemporaryDrawer from "./Drawer";
 import Button from "../Button";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -11,16 +12,16 @@ function Header() {
         CryptoTracker<span style={{ color: "var(--blue)" }}>.</span>
       </h1>
       <div className="links">
-        <a href="./" className="link">
+        <Link to="/" className="link">
           Home
-        </a>
-        <a href="./" className="link">
+        </Link>
+        <Link to="/compare" className="link">
           Compare
-        </a>
-        <a href="./" className="link">
+        </Link>
+        <Link to="/watchlist" className="link">
           WatchList
-        </a>
-        <a href="#">
+        </Link>
+        <Link to="/dashboard" className="link">
           <Button
             text="DashBoard"
             onClick={() => {
@@ -28,7 +29,7 @@ function Header() {
             }}
             // outline={true}
           />
-        </a>
+        </Link>
       </div>
       <div className="mobile-drawer">
         <TemporaryDrawer></TemporaryDrawer>

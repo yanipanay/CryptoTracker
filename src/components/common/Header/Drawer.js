@@ -4,6 +4,8 @@ import Drawer from "@mui/material/Drawer";
 
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import { IconButton } from "@mui/material";
+import { Link } from "react-router-dom";
+import Button from "../Button";
 
 export default function TemporaryDrawer() {
   const [open, setOpen] = React.useState(false);
@@ -27,18 +29,24 @@ export default function TemporaryDrawer() {
             }}
           >
             <div className="drawer-div">
-              <a href="./" className="link">
+              <Link to="/" className="link">
                 Home
-              </a>
-              <a href="./" className="link">
+              </Link>
+              <Link to="/compare" className="link">
                 Compare
-              </a>
-              <a href="./" className="link">
+              </Link>
+              <Link to="/watchlist" className="link">
                 WatchList
-              </a>
-              <a href="./" className="link">
-                Dashboard
-              </a>
+              </Link>
+              <Link to="/dashboard" className="link">
+                <Button
+                  text="DashBoard"
+                  onClick={() => {
+                    console.log("dash");
+                  }}
+                  // outline={true}
+                />
+              </Link>
             </div>
           </Drawer>
         </React.Fragment>
