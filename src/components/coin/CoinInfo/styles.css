@@ -1,0 +1,7 @@
+.coin-info-para a{
+    text-decoration: underline !important; 
+}
+
+.coin-info-para a:hover{
+    color: var(--blue) !important; 
+}

@@ -1,4 +1,4 @@
-.search-flex{
+.search-flex {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -11,7 +11,7 @@
     border-radius: 2rem;
 }
 
-.search-flex input{
+.search-flex input {
     background-color: var(--darkgrey);
     border: none;
     width: 100%;
@@ -20,6 +20,6 @@
     font-family: 'Inter';
 }
 
-.search-flex input:focus{
+.search-flex input:focus {
     outline: none;
 }
