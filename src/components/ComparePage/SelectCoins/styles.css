@@ -1,0 +1,10 @@
+.selection-options{
+    display: flex;
+    margin: 1.5rem;
+    gap:2rem;
+}
+
+.select-coin{
+    display: flex;
+    gap:1rem;
+}
