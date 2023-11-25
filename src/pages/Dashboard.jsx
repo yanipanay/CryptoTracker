@@ -373,7 +373,7 @@ function Dashboard() {
   const [search, setSearch] = useState("");
   const [paginatedCoins, setPaginatedCoins] = useState([]);
   // TODO : set this to true a default
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   const filteredCoins = coins.filter((coin) => {
     return (
@@ -393,8 +393,8 @@ function Dashboard() {
     setPaginatedCoins(coins.slice(prevInd, prevInd + 10));
   };
 
-  //TODO : remove this after work is done
-  // setPaginatedCoins(coins.slice(0,10));
+  //TODO : uncomment this after work is done
+  // setPaginatedCoins(coins.slice(0, 10));
 
   useEffect(() => {
     getData();
